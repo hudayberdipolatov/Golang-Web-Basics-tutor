@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{.PageTitle}}</title>
+</head>
+<body>
+    <ul>
+    {{range.ToDos}}
+        {{if .Done}}
+        <li style="color: white; background-color: black">{{.Title}}</li>
+        {{else}}
+        <li>{{.Title}}</li>
+        {{end}}
+    {{end}}
+    </ul>
+</body>
+</html>
